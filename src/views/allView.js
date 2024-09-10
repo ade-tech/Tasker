@@ -54,7 +54,7 @@ class allView extends View {
   _renderError() {
     return `
     <div class="error">
-          <img src="images/noun-add-4644662.png" alt="" width="100px" />
+          <img src="src/images/noun-add-4644662.png" alt="" width="100px" />
           <h1>
             You haven't added<br />
             any tasks yet!

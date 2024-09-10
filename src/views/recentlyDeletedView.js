@@ -26,7 +26,7 @@ class RecentlyDeletedView extends View {
   _renderError() {
     return `
     <div class="error">
-          <img src="images/noun-deleted-4644672.png" alt="" width="100px" />
+          <img src="src/images/noun-deleted-4644672.png" alt="" width="100px" />
           <h1>
             You haven't deleted <br />
             any tasks yet!
