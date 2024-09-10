@@ -1,0 +1,308 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Plus Jakarta Sans";
+}
+.menu {
+  flex-basis: 18%;
+  background-color: rgb(241, 241, 241);
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  margin: 1rem 0 0 0.5rem;
+}
+.states {
+  width: 100%;
+}
+.states ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.states li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
+  background-color: rgb(241, 241, 241);
+  font-weight: normal;
+  transition: background-color 0.5s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.states li.active {
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.addTask {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  align-self: center;
+  width: 60%;
+  cursor: pointer;
+}
+.workspace {
+  flex-basis: 80%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.workspace h2 {
+  padding: 0;
+  margin: 0 0 0 30px;
+}
+.shortcut {
+  margin: -8px 30px 0 30px;
+  padding: 0;
+  font-size: small;
+}
+.shortcut span {
+  font-weight: 800;
+  border: 1.2px solid gray;
+  padding: 1px 3px;
+  border-radius: 3px;
+  margin: 0 2px;
+}
+
+.formwindow {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: absolute;
+  background-color: rgba(135, 135, 135, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formcontainer {
+  background-color: white;
+  width: 30%;
+  height: 50%;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 30px 0 rgb(152, 152, 152);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+input {
+  width: 95%;
+  height: 40px;
+  padding-left: 20px;
+  outline: none;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.formcontainer h1 {
+  margin-top: 0;
+}
+.formcontainer textarea {
+  resize: none;
+  width: 95%;
+  padding: 10px 0 0 20px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+  font-family: "Plus Jakarta sans";
+}
+.formcontainer textarea:focus {
+  border: 1px solid gray;
+  outline: none;
+}
+.formcontainer button {
+  width: 100%;
+  background-color: black;
+  padding: 15px 0;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.formcontainer button:hover {
+  background-color: rgb(27, 27, 27);
+}
+.formcontainer > img {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: "Plus Jakarta Sans";
+}
+
+.hidden {
+  display: none;
+}
+.taskView {
+  width: calc(100% - 40px);
+  height: calc(88vh - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-align: left;
+  padding-top: 80px;
+  margin-left: 40px;
+}
+.task {
+  /* width: 15%; */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px 0 rgb(230, 230, 230);
+  border-radius: 20px;
+  padding: 15px 25px;
+  position: relative;
+}
+.task h1,
+p {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.task p {
+  font-size: 12px;
+  text-align: justify;
+}
+.task h1 {
+  font-size: 1.2rem;
+  display: inline;
+  width: 150px;
+  font-weight: 400;
+}
+.icons {
+  text-align: right;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icons svg {
+  margin-top: 5px;
+}
+
+.icons img {
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateY(100px);
+}
+.error h1 {
+  font-size: larger;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.iconsSide {
+  margin-right: 80px;
+}
+
+.notification,
+.search {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.notificationwindow {
+  position: absolute;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+  z-index: 9999;
+  right: 80px;
+  background-color: white;
+  box-shadow: 0 0 40px 0 lightgray;
+  border-radius: 20px;
+  top: 60px;
+}
+.notification-text {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.notifycontainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  gap: 5px;
+  padding: 15px;
+  box-shadow: 0 0 1px 0 lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.notify-active {
+  fill: black;
+  stroke: none;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 32px;
+  right: 91px;
+  z-index: 9999;
+}
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(135, 135, 135, 0.5);
+  display: none;
+  justify-content: center;
+
+  align-items: center;
+}
+.description-container {
+  width: 45%;
+  height: 70%;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 40px 0 darkgray;
+}
+.close {
+  position: absolute;
+  top: 130px;
+  right: 450px;
+  width: 25px;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "tasker",
+  "version": "1.0.0",
+  "description": "A simple Task management Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Abdone",
+  "license": "ISC"
+}
