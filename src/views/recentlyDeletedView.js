@@ -1,4 +1,5 @@
 import View from "./previewView.js";
+import errorImage from "../images/noun-deleted-4644672.png";
 
 class RecentlyDeletedView extends View {
   #triggerElement = document.querySelector(".deleted");
@@ -26,7 +27,7 @@ class RecentlyDeletedView extends View {
   _renderError() {
     return `
     <div class="error">
-          <img src="src/images/noun-deleted-4644672.png" alt="" width="100px" />
+          <img src="${errorImage}" alt="" width="100px" />
           <h1>
             You haven't deleted <br />
             any tasks yet!

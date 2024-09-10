@@ -1,5 +1,5 @@
 import View from "./previewView.js";
-
+import errorImage from "../images/noun-history-4644679.png";
 class pendingView extends View {
   #triggerElement = document.querySelector("#pending");
   #data;
@@ -23,7 +23,7 @@ class pendingView extends View {
   _renderError() {
     return `
     <div class="error">
-          <img src="src/images/noun-history-4644679.png" alt="" width="100px" />
+          <img src="${errorImage}" alt="" width="100px" />
           <h1>
             You don't haved<br />
             any pending task!

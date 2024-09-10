@@ -1,4 +1,5 @@
 import View from "./previewView.js";
+import errorImage from "../images/noun-correct-4644680.png";
 
 class completeView extends View {
   #triggerElement = document.querySelector("#completed");
@@ -41,7 +42,7 @@ class completeView extends View {
   _renderError() {
     return `
     <div class="error">
-          <img src="src/images/noun-correct-4644680.png" alt="" width="100px" />
+          <img src="${errorImage}" alt="" width="100px" />
           <h1>
             You haven't completed<br />
             any tasks yet!
