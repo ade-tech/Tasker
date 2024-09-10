@@ -1,8 +1,3 @@
-Tas
-Here’s a sample README description for **Tasker**, assuming it's a task management app:
-
----
-
 # Tasker
 
 **Tasker** is a simple yet powerful task management application designed to help you organize, prioritize, and manage your daily tasks with ease. Built with a minimalistic user interface, Tasker enables users to create, edit, and delete tasks while keeping track of completed and recently deleted items.
