@@ -23,7 +23,7 @@ class pendingView extends View {
   _renderError() {
     return `
     <div class="error">
-          <img src="images/noun-history-4644679.png" alt="" width="100px" />
+          <img src="noun-history-4644679.png" alt="" width="100px" />
           <h1>
             You don't haved<br />
             any pending task!
