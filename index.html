@@ -8,14 +8,14 @@
     <script type="module" src="src/controller.js"></script>
     <link
       rel="shortcut icon"
-      href="./images/shortLogoWhite.png"
+      href="src/images/shortLogoWhite.png"
       type="image/x-icon"
     />
   </head>
   <body>
     <div class="formwindow hidden">
       <form class="formcontainer">
-        <img src="images/Close.png" alt="close" class="close" />
+        <img src="src/images/Close.png" alt="close" class="close" />
         <h1>Add Task</h1>
         <input
           type="text"
@@ -34,7 +34,7 @@
     </div>
     <div class="menu">
       <img
-        src="images/MainLogoBlack.png"
+        src="src/images/MainLogoBlack.png"
         alt="Main Logo"
         width="120"
         class="logo"
@@ -43,33 +43,34 @@
         <ul>
           <li
             class="menu_item active all"
-            data-default="images/Task.png"
-            data-active="images/TaskActive.png"
+            data-default="src/images/Task.png"
+            data-active="src/images/TaskActive.png"
           >
-            <img src="images/TaskActive.png" alt="" width="25px" />All
+            <img src="src/images/TaskActive.png" alt="" width="25px" />All
           </li>
           <li
             class="menu_item"
             id="completed"
-            data-default="images/completed.png"
-            data-active="images/completedActive.png"
+            data-default="src/images/completed.png"
+            data-active="src/images/completedActive.png"
           >
-            <img src="images/completed.png" alt="" width="25px" />Completed
+            <img src="src/images/completed.png" alt="" width="25px" />Completed
           </li>
           <li
             class="menu_item"
-            data-default="images/pending.png"
-            data-active="images/pendingActive.png"
+            data-default="src/images/pending.png"
+            data-active="src/images/pendingActive.png"
             id="pending"
           >
-            <img src="images/pending.png" alt="" width="25px" />Pending
+            <img src="src/images/pending.png" alt="" width="25px" />Pending
           </li>
           <li
             class="menu_item deleted"
-            data-default="images/delete.png"
-            data-active="images/deleteActive.png"
+            data-default="src/images/delete.png"
+            data-active="src/images/deleteActive.png"
           >
-            <img src="images/delete.png" alt="" width="25px" />Recently Deleted
+            <img src="src/images/delete.png" alt="" width="25px" />Recently
+            Deleted
           </li>
         </ul>
       </div>
@@ -150,20 +151,20 @@
     </div>
     <div class="notificationwindow hidden">
       <div class="notifycontainer">
-        <img src="images/Task.png" alt="" class="profile" width="20px" />
+        <img src="src/images/Task.png" alt="" class="profile" width="20px" />
         <p class="notification-text">
           It's past 24hrs since you added the task <b>"I want to ..."</b>
         </p>
       </div>
       <div class="notifycontainer">
-        <img src="images/Task.png" alt="" class="profile" width="20px" />
+        <img src="src/images/Task.png" alt="" class="profile" width="20px" />
         <p class="notification-text">
           It's past 5hrs since you added the task <b>"I want to ..."</b>
         </p>
       </div>
     </div>
     <div class="description hidden">
-      <img src="images/Close.png" alt="" class="close" />
+      <img src="src/images/Close.png" alt="" class="close" />
       <div class="description-container"></div>
     </div>
   </body>
