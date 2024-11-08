@@ -14,7 +14,7 @@ class notificationView extends View {
       return;
     }
     this._clear(this.#parentView);
-    console.log(data);
+
     const markup = data.map(this._generateTaskMarkup).join("");
     this.#parentView.insertAdjacentHTML("afterbegin", markup);
   }

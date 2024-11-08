@@ -8,8 +8,6 @@ export const applicationState = {
 export const Addtask = function (task) {
   applicationState.taskLists.push(task);
   updateapplicationState();
-
-  // console.log(applicationState.taskLists);
 };
 
 const updateapplicationState = function () {
@@ -38,7 +36,6 @@ export const completeTask = function (taskProvided) {
     }
   });
 
-  console.log(toBeCompletedID);
   applicationState.completedTask.push(toBeCompletedID);
   updateapplicationState();
 };
@@ -48,7 +45,6 @@ export const notification = function (task) {
     const time = new Date(
       applicationState.currentTime - task.timestamp
     ).getSeconds();
-    console.log(time);
 
     return task;
   }

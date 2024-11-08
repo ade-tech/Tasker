@@ -21,7 +21,6 @@ class allView extends View {
     });
   }
   _generateTaskMarkup(task) {
-    console.log(task);
     return `
           <div class="task">
             <div class="icons">

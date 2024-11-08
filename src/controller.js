@@ -31,7 +31,6 @@ const controlLoad = function () {
   allView.render(model.applicationState.taskLists);
 };
 const controlDeleteTask = function (markup) {
-  console.log(markup);
   model.applicationState.taskLists.find((task) => {
     if (task.text === markup) model.deleteTask(task.id);
   });
@@ -49,7 +48,7 @@ const controlCompletedView = function () {
   const completedArray = model.applicationState.taskLists.filter(
     (task) => task.completed === true
   );
-  console.log(completedArray);
+
   completedView.render(completedArray);
 };
 
@@ -64,7 +63,6 @@ const controlNotificationView = function () {
     model.notification
   );
   notificationView.render(pendingNotifications);
-  console.log(pendingNotifications);
 };
 
 const init = function () {
