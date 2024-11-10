@@ -180,6 +180,11 @@ textarea::placeholder {
   border-radius: 20px;
   padding: 15px 25px;
   position: relative;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.task:hover {
+  scale: 1.07;
 }
 .task h1,
 p {

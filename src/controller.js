@@ -8,6 +8,7 @@ import notificationView from "./views/notificationView.js";
 import completed from "./views/completed.js";
 import completedView from "./views/completedView.js";
 import pendingView from "./views/pendingView.js";
+import descriptionView from "./views/descriptionView.js";
 
 const more = document.querySelector(".more");
 
@@ -43,7 +44,12 @@ const controlCompleteTask = function (markup) {
     }
   });
 };
-
+const controlDescriptionView = function (markup) {
+  const letSee = model.applicationState.taskLists.find(
+    (task) => task.text === markup
+  );
+  console.log(letSee);
+};
 const controlCompletedView = function () {
   const completedArray = model.applicationState.taskLists.filter(
     (task) => task.completed === true
@@ -78,6 +84,7 @@ const init = function () {
   completedView.addHandlerComplete(controlCompletedView);
   pendingView.addHandlerPending(controlPendingView);
   notificationView.addhandlerStatus(controlNotificationView);
+  descriptionView.addHandlershow(controlDescriptionView);
 };
 
 init();
