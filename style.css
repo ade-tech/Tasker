@@ -84,7 +84,8 @@ body {
   margin: 0 2px;
 }
 
-.formwindow {
+.formwindow,
+.taskDescription {
   width: 100vw;
   height: 100vh;
   z-index: 100;
@@ -93,6 +94,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.taskDescription > .formcontainer {
+  height: 42%;
+  align-items: flex-start;
+}
+.taskDescription .formcontainer > img {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  width: 25px;
+  cursor: pointer;
 }
 .formcontainer {
   background-color: white;
@@ -109,7 +121,7 @@ body {
 input {
   width: 95%;
   height: 40px;
-  padding-left: 20px;
+  padding-left: 18px;
   outline: none;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 5px;
@@ -121,7 +133,7 @@ input {
 .formcontainer textarea {
   resize: none;
   width: 95%;
-  padding: 10px 0 0 20px;
+  padding: 20px 0 0 20px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 5px;
   font-family: "Plus Jakarta sans";

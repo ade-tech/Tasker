@@ -45,10 +45,15 @@ const controlCompleteTask = function (markup) {
   });
 };
 const controlDescriptionView = function (markup) {
-  const letSee = model.applicationState.taskLists.find(
+  const filterFromDeleted = model.applicationState.recentDeleted.filter(
     (task) => task.text === markup
   );
-  console.log(letSee);
+  const letSee =
+    filterFromDeleted.length === 0
+      ? model.applicationState.taskLists.filter((task) => task.text === markup)
+      : filterFromDeleted;
+
+  descriptionView.render(letSee);
 };
 const controlCompletedView = function () {
   const completedArray = model.applicationState.taskLists.filter(
