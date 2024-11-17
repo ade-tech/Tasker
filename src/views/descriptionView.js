@@ -1,5 +1,5 @@
 import View from "./previewView.js";
-import cancel from "../images/close.png";
+import cancel from "../images/Close.png";
 
 class DescriptionView extends View {
   // Override parent element to be `document.body`
