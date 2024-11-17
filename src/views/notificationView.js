@@ -21,13 +21,12 @@ class notificationView extends View {
 
   addhandlerStatus(handler) {
     this.#triggerElement.addEventListener("click", () => {
+      handler(this.#parentView);
       if (this.#triggerElement.classList.contains("notify-active")) {
         this.#triggerElement.classList.remove("notify-active");
       } else {
         this.#triggerElement.classList.add("notify-active");
       }
-
-      handler(this.#parentView);
     });
   }
   _generateTaskMarkup(task) {

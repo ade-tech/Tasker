@@ -41,7 +41,7 @@ export const completeTask = function (taskProvided) {
 };
 
 export const notification = function (task) {
-  if (applicationState.currentTime - task.timestamp > 1000) {
+  if (applicationState.currentTime - task.timestamp > 34000) {
     const time = new Date(
       applicationState.currentTime - task.timestamp
     ).getSeconds();
